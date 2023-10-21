@@ -21,6 +21,5 @@ const bookModel = new mongoose.Schema({
   timestamps: true
 })
 
-
 // book model
 export const Book = mongoose.model('Book', bookModel);
