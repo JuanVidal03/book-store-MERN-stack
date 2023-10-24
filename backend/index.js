@@ -12,6 +12,8 @@ import cors from "cors";
 const app = express();
 app.use(express.json());
 // use cors
+app.use(cors());
+/*
 app.use(
   cors({
     origin: 'http:localhost:3000',
@@ -19,6 +21,7 @@ app.use(
     allowedHeaders: ['Content-Type']
   })
 );
+*/
 // use routers
 app.use('/api', bookRouter);
 

@@ -6,7 +6,7 @@ import { createBook, getBooks, getBookById, updateBook, deleteById } from "../co
 const router = Router();
 
 // create book
-router.post('/book', createBook);
+router.post('/books', createBook);
 // see all books
 router.get('/books', getBooks);
 // book by id

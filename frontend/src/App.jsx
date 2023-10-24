@@ -1,7 +1,7 @@
 // import react router DOM
 import { Routes, Route } from "react-router-dom"
 // import page components
-import Home from "./pages/Home"
+import Home from "./pages/Home.jsx"
 import CreateBook from "./pages/CreateBook"
 import DeleteBook from "./pages/DeleteBook"
 import ShowBooks from "./pages/ShowBooks"
