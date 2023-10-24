@@ -6,9 +6,19 @@ import { PORT } from "./config.js";
 import { mongoConnection } from "./DB/mongoDB.js";
 // import routes
 import bookRouter from "./routes/books.routes.js";
+// import cors
+import cors from "cors";
 
 const app = express();
 app.use(express.json());
+// use cors
+app.use(
+  cors({
+    origin: 'http:localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type']
+  })
+);
 // use routers
 app.use('/api', bookRouter);
 
